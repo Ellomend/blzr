@@ -13,7 +13,26 @@
 
         <q-toolbar-title> Quasar App </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>
+          <!-- link to home page -->
+          <q-btn
+            flat
+            dense
+            round
+            icon="home"
+            aria-label="Home"
+            :to="{ name: 'home' }"
+          />
+          <!-- link to demo page -->
+          <q-btn
+            flat
+            dense
+            round
+            icon="list"
+            aria-label="Demo"
+            :to="{ name: 'demo' }"
+          />
+        </div>
       </q-toolbar>
     </q-header>
 
