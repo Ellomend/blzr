@@ -23,11 +23,13 @@
         {{ todos }}
       </q-card-section>
     </q-card>
+    <demo-todo />
   </q-page>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import DemoTodo from '../components/TodoContainer/DemoTodo.vue';
 
 const todos = ref<{ id: number; content: string }[]>([
   {
